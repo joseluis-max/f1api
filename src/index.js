@@ -13,6 +13,9 @@ server.set('json spaces', 2);
 server.use(require('./routes/drivers'));
 server.use(require('./routes/constructors'));
 server.use(require('./routes/circuits'));
+server.use(require('./routes/postDrivers'));
+server.use(require('./routes/deleteDrivers'))
+
 
 server.listen(server.get('port'), ()=>{
   console.log(server.get('port'))
