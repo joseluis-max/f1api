@@ -8,14 +8,11 @@ server.use(express.urlencoded({extended: false}));
 server.use(express.json());
 
 server.set('port', process.env.PORT || 3000);
-server.set('json spaces', 2);
+// server.set('json spaces', 2);
 
 server.use(require('./routes/drivers'));
 server.use(require('./routes/constructors'));
 server.use(require('./routes/circuits'));
-server.use(require('./routes/postDrivers'));
-server.use(require('./routes/deleteDrivers'))
-
 
 server.listen(server.get('port'), ()=>{
   console.log(server.get('port'))
