@@ -11,7 +11,8 @@ server.set('port', process.env.PORT || 3000);
 server.set('json spaces', 2);
 
 server.use(require('./routes/drivers'));
- 
+server.use(require('./routes/constructors'));
+server.use(require('./routes/circuits'));
 
 server.listen(server.get('port'), ()=>{
   console.log(server.get('port'))
