@@ -29,6 +29,6 @@ router.put('/drivers/:id',(req, res) => {
    }
   });
   res.json(drivers)
-})
+});
 
 module.exports = router;
